@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo APP</title>
+
+    <!-- Bootstrap Installation -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <!-- Linking css file -->
+
+    <link rel="stylesheet" href="./app.css" />
+</head>
+
+<body>
+    <section id="main">
+        <h1 class="text-center text-success">Welcome to our Todo App</h1>
+        <div class="todo-list mt-2 pt-2 border-2">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 input-section ">
+                        <div class="input-heading ">
+                            <h1 class="text-center bg-success">Add To List</h1>
+                        </div>
+                        <div class="input">
+                            <div class="form-inline centered" id="todoInput">
+                                <input type="text" class="form-control mb-2 mr-sm-2" id="input"
+                                    placeholder="Enter Task">
+                                <button id="submit" type="submit" class="btn btn-primary mb-2">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 output-section ">
+                        <div class="output-heading bg-warning">
+                            <h1 class="text-center">List</h1>
+                        </div>
+                        <div id="table-wrap">
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <footer class="page-footer font-small blue">
+
+            <div class="footer-copyright text-center py-3">
+                <!-- <p>Single Click To Complete</p> -->
+                <p class="info">Click On List Name To Delete</p>
+                © 2021 Copyright: Todo Web App
+            </div>
+
+        </footer>
+
+
+    </section>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
