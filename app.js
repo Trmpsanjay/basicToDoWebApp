@@ -8,7 +8,7 @@ const updateLocalStorage = function() {
   
   getLocalStorage();
 
-  //if(todoList.length!=0){
+  if(todoList.length!=0){
     console.log("inside if");
     todoList.map((list,index)=>{
      const  data = document.createElement("h1");
@@ -43,7 +43,7 @@ const updateLocalStorage = function() {
     
  })
     });
-  //}
+  }
 
 
 
