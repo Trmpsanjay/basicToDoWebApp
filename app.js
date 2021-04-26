@@ -1,4 +1,4 @@
-let todoList  =["test"];
+var todoList  =[];
 const updateLocalStorage = function() {
     localStorage.setItem('todos', JSON.stringify(todoList));
   }
