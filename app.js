@@ -3,7 +3,7 @@ const updateLocalStorage = function() {
     localStorage.setItem('todos', JSON.stringify(todoList));
   }
   const getLocalStorage = function (){
-      todoList = JSON.parse(localStorage.getItem('todos'));
+      todoList = JSON.parse(localStorage.getItem('todos')) || {};
   }
   
   getLocalStorage();
